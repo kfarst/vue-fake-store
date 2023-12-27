@@ -1,0 +1,29 @@
+Fake Store
+----------
+
+Create a fake store where users can view products, add them to a cart, and perform a checkout.
+The mock e-commerce app must be written in Vue.js. The products must be fetched from the Fake
+Store API (https://fakestoreapi.com/).
+
+Tasks
+-----
+
+1. Load products from the API onto a grid style UI. Each product must display a picture, the name
+of the product, a description, the price, and an `Add to Cart` button. While the products are being
+fetched, some sort of loading state must be shown.
+
+2. Clicking `Add to Cart` will add the product to a shopping cart. A user can select the product
+multiple times which will add to its quantity. Ideally, the cart item count should be displayed
+somewhere on the screen as a confirmation to the user that the product was added after clicking the button.
+
+3. Create a view of the shopping cart once products are added. Users should see a picture, title, item price,
+item quantity, and subtotal (price * quantity) for each product listed. The user has the ability to delete
+the product from the cart (either deleting the product entirely or decreasing the quantity). When all products
+are deleted from the cart, an empty cart message should be shown to the user.
+
+4. Create a checkout form for the cart items. You shoud collect email, first name, last name, street address,
+city, state, and zip. Each field must have at least one validation on it which will display an error message
+to the user to prompt them to fix the error. If all errors are fixed or there are no errors once the use fills
+out the form, display some sort of message that the form has been submitted.
+
+5. Write unit or component tests for at least one component or class in the app.
